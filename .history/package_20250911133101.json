@@ -10,7 +10,7 @@
     "lint": "vue-cli-service lint",
     "deploy": "npm run build && gh-pages -d dist"
   },
-  "homepage": "https://ping888.github.io/pingMall/",
+ "homepage": "https://ping888.github.io/pingMall/",
   "dependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.7.4",
     "axios": "^0.19.0",
@@ -31,7 +31,6 @@
     "element-ui": "^2.13.0",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
-    "gh-pages": "^6.3.0",
     "jsonp": "^0.2.1",
     "mockjs": "^1.1.0",
     "node-sass": "^4.14.1",

@@ -16,7 +16,7 @@ module.exports = {
   // outputDir:'dist',
   // indexPath:'index2.html',
   // lintOnSave:false,
-  publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/pingMall/' : '/',
   productionSourceMap:true,
   chainWebpack:(config)=>{
     config.plugins.delete('prefetch');
