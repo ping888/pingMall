@@ -228,8 +228,9 @@
   }
 </script>
 <style lang="scss">
-  @import './../assets/scss/config.scss';
-  @import './../assets/scss/mixin.scss';
+  @use './../assets/scss/config.scss' as *;
+  @use './../assets/scss/mixin.scss';
+
   .index{
     .swiper-box{
       .nav-menu{
@@ -255,7 +256,7 @@
                 right:30px;
                 top:17.5px;
                 content:' ';
-                @include bgImg(10px,15px,'/imgs/icon-arrow.png');
+                @include mixin.bgImg(10px,15px,'/imgs/icon-arrow.png');
               }
             }
             &:hover{
@@ -310,7 +311,7 @@
       }  
     }
     .ads-box{
-      @include flex();
+      @include mixin.flex();
       margin-top:14px;
       margin-bottom:31px;
       a{
@@ -342,7 +343,7 @@
         }
         .list-box{
           .list{
-            @include flex();
+            @include mixin.flex();
             width:986px;
             margin-bottom:14px;
             &:last-child{
@@ -391,7 +392,7 @@
                   font-weight:bold;
                   cursor:pointer;
                   &:after{
-                    @include bgImg(22px,22px,'/imgs/icon-cart-hover.png');
+                    @include mixin.bgImg(22px,22px,'/imgs/icon-cart-hover.png');
                     content:' ';
                     margin-left:5px;
                     vertical-align: middle;

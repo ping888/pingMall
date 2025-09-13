@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = {
 	devServer: {
 		host: 'localhost',
@@ -28,14 +29,24 @@ module.exports = {
 					process.env.NODE_ENV === 'production' ? '/pingMall/' : '/'
 				return options
 			})
+	
 	},
-	// publicPath:'/app',
-	//   publicPath: process.env.NODE_ENV === 'production' ? './' : '/',
-	// outputDir:'dist',
-	// indexPath:'index2.html',
-	// lintOnSave:false,
 	productionSourceMap: true,
-	//   chainWebpack:(config)=>{
-	//     config.plugins.delete('prefetch');
-	//   }
+    css: {
+    loaderOptions: {
+      sass: {
+        implementation: require('sass'), // 确保这里使用的是 sass (dart-sass)
+         // 这里有两种写法，选择一种即可
+        // 写法一：注入全局变量，适合配置变量（推荐）
+        additionalData: `
+          @use "sass:math";
+          @use "sass:color";
+        `,
+        // 写法二：为 Sass/Scss 添加共享目录
+        sassOptions: {
+          includePaths: [path.resolve(__dirname, 'src')]
+        }
+      }
+    }
+  }
 }

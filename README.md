@@ -33,3 +33,5 @@ git commit -m "手动部署"
 git branch -M gh-pages
 git remote add origin https://github.com/ping888/pingMall.git
 git push -f origin gh-pages
+# 快速删除
+rimraf node_modules

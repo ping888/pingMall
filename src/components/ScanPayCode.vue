@@ -26,8 +26,8 @@
   }
 </script>
 <style lang="scss">
-  @import './../assets/scss/config.scss';
-  @import './../assets/scss/mixin.scss';
+  @use './../assets/scss/config.scss';
+  @use './../assets/scss/mixin.scss';
   .scan{
     position: absolute;
     top: 0;
@@ -51,7 +51,7 @@
       display: flex;
       align-items: center;
       .img-scan{
-        @include bgImg(296px,485px,'/imgs/pay/icon-scan.png');
+        @include mixin.bgImg(296px,485px,'/imgs/pay/icon-scan.png');
       }
       .img-pay{
         width: 370px;
@@ -70,7 +70,7 @@
             position:absolute;
             top: 23.5px;
             right: 20px;
-            @include bgImg(13px,13px,'/imgs/icon-close.png');
+            @include mixin.bgImg(13px,13px,'/imgs/icon-close.png');
             cursor:pointer;
           }
         }
