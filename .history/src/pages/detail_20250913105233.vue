@@ -5,10 +5,10 @@
       <div class="container clearfix">
         <div class="swiper">
           <swiper :options="swiperOption">
-              <swiper-slide><img :src="`${publicPath}/imgs/detail/phone-1.jpg`" alt=""></swiper-slide>
-              <swiper-slide><img :src="`${publicPath}/imgs/detail/phone-2.jpg`" alt=""></swiper-slide>
-              <swiper-slide><img :src="`${publicPath}/imgs/detail/phone-3.jpg`" alt=""></swiper-slide>
-              <swiper-slide><img :src="`${publicPath}/imgs/detail/phone-4.jpg`" alt=""></swiper-slide>
+              <swiper-slide>:src="`${publicPath}/imgs/detail/phone-1.jpg`" alt=""></swiper-slide>
+              <swiper-slide>:src="`${publicPath}/imgs/detail/phone-2.jpg`" alt=""></swiper-slide>
+              <swiper-slide>:src="`${publicPath}/imgs/detail/phone-3.jpg`" alt=""></swiper-slide>
+              <swiper-slide>:src="`${publicPath}/imgs/detail/phone-4.jpg" alt=""></swiper-slide>
               <!-- Optional controls -->
               <div class="swiper-pagination"  slot="pagination"></div>
           </swiper>
@@ -53,7 +53,7 @@
       <div class="container">
         <h2>价格说明</h2>
         <div class="desc">
-          <img :src="`${publicPath}/imgs/detail/item-price.jpeg`" alt="">
+          :src="`${publicPath}/imgs/detail/item-price.jpeg`" alt="">
         </div>
       </div>
     </div>
