@@ -16,8 +16,7 @@ module.exports = {
 		process.env.NODE_ENV === 'production'
 			? '/pingMall/' // 必须与GitHub仓库名一致
 			: '/',
-	transpileDependencies: true,
-
+	transpileDependencies: [],
 	// 确保静态资源正确处理
 	chainWebpack: (config) => {
 		config.module
